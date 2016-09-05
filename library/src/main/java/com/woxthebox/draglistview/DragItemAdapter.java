@@ -160,12 +160,6 @@ public abstract class DragItemAdapter<T, VH extends DragItemAdapter.ViewHolder> 
 			});
 
 			if (itemView != mGrabView) {
-				itemView.setOnLongClickListener(new View.OnLongClickListener() {
-					@Override
-					public boolean onLongClick(View view) {
-						return onItemLongClicked(view);
-					}
-				});
 				itemView.setOnTouchListener(new View.OnTouchListener() {
 					@Override
 					public boolean onTouch(View view, MotionEvent event) {
